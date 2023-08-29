@@ -93,7 +93,7 @@ function doPost(e) {
         Logger.log(JSON.stringify(e));
     }
     function setColor(hour, colorRange) {
-        if (hour >= 17 && hour <= 4) { // 下午五點到凌晨四點前
+        if (hour >= 17 || hour <= 4) { // 下午五點到凌晨四點前
             let colors = [
                 ["#c4e1e1", "#c4e1e1", "#c4e1e1", "#c4e1e1"] // These are the hex equivalents
             ];
